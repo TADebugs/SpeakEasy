@@ -42,4 +42,5 @@
         android:text="Welcome to SpeakEasy!"
         android:textSize="18sp"
         android:textColor="@color/text_secondary"/>
+
 </LinearLayout>

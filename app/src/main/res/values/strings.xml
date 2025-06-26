@@ -1,8 +1,10 @@
 <resources>
     <string name="welcome">Welcome to SpeakEasy!</string>
-<string name="get_to_know_you">Let’s get to know you.</string>
-<string name="enter_name">Enter your name</string>
-<string name="continue_btn">Continue</string>
+    <string name="get_to_know_you">Let\'s get to know you.</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="continue_btn">Continue</string>
     <string name="continue_as_guest">Continue as Guest</string>
     <string name="app_name">SpeakEasy</string>
+    <string name="splash_tagline">Practice Public Speaking With Confidence</string>
+    <string name="start">Start</string>
 </resources>
