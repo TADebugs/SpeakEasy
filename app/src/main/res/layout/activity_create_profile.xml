@@ -53,7 +53,7 @@
         android:gravity="center"
         android:alpha="0.9"/>
 
-    <!-- Input field -->
+    <!-- Full Name Input field -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
         android:layout_width="match_parent"
@@ -65,7 +65,7 @@
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxBackgroundColor="@color/white"
         app:hintTextColor="@color/primary"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etName"
@@ -79,12 +79,65 @@
             android:padding="16dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Continue button -->
+    <!-- Username Input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/primary"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="filled"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/primary"
+        android:layout_marginBottom="24dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Login/Register button -->
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="@string/continue_btn"
+        android:text="Login"
         android:backgroundTint="@color/white"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -92,6 +145,20 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_button_white"
         android:elevation="8dp"/>
+
+    <!-- Toggle Login/Register mode button -->
+    <Button
+        android:id="@+id/btnToggleMode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Don't have an account? Register"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/rounded_button_transparent"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.9"/>
 
     <!-- Guest button with visible text -->
     <Button
