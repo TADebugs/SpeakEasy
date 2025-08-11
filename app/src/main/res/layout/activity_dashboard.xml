@@ -25,20 +25,43 @@
         android:layout_marginEnd="16dp"
         android:text="Hi User Name"
         android:textSize="45dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnProfile"
+        app:layout_constraintEnd_toStartOf="@+id/profileContainer"
         app:layout_constraintStart_toEndOf="@+id/ivAvatar"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnProfile"
-        android:layout_width="34dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:contentDescription="Profile"
-        android:src="@drawable/ic_person"
+    <!-- Profile button with switch user functionality -->
+
+    <LinearLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnProfile"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profile"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tvSwitchUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif"
+            android:text="Switch User"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnNewRecording"
@@ -47,17 +70,6 @@
         android:layout_marginBottom="12dp"
         android:text="New Recording"
         app:layout_constraintBottom_toTopOf="@+id/btnPriorRecordings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnChangeUser"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginBottom="40dp"
-        android:text="Switch User"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -121,9 +133,9 @@
         android:id="@+id/btnNewPrompt"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="40dp"
         android:text="New Prompt"
-        app:layout_constraintBottom_toTopOf="@+id/btnChangeUser"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

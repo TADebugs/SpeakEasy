@@ -3,13 +3,22 @@ package com.example.coursework.speakeasy.ui
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.coursework.speakeasy.R
+import com.example.coursework.speakeasy.data.AppDatabase
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class HomeActivity : AppCompatActivity() {
+    private val userDao by lazy { AppDatabase.getDatabase(this).userDao() }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -30,6 +39,31 @@ class HomeActivity : AppCompatActivity() {
         // Profile button click
         findViewById<ImageButton>(R.id.btnProfile).setOnClickListener {
             showProfileDialog()
+        }
+
+        val btnChangePassword = findViewById<Button>(R.id.btnChangePassword)
+        btnChangePassword.setOnClickListener {
+            val etNewPassword = findViewById<EditText>(R.id.etNewPassword)
+            val newPassword = etNewPassword.text.toString().trim()
+
+            if (newPassword.isNotEmpty()) {
+                CoroutineScope(Dispatchers.IO).launch {
+                    val sharedPrefs = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+                    val username = sharedPrefs.getString("user_name", null)
+
+                    if (username != null) {
+                        val user = userDao.getUserByUsername(username)
+                        if (user != null) {
+                            userDao.updateUser(user.copy(password = newPassword))
+                            runOnUiThread {
+                                Toast.makeText(this@HomeActivity, "Password updated successfully!", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    }
+                }
+            } else {
+                Toast.makeText(this, "Please enter a new password.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
