@@ -120,14 +120,12 @@ CREATE TABLE users (
 |-----------------------------|----------|----------------|---------|
 | **Recording Functionality** | HIGH     | 3-4 days       | ✅ COMPLETE |
 | **Prompt Management**       | HIGH     | 2-3 days       | ✅ COMPLETE |
-| **Recording Playback**      | MEDIUM   | 1-2 days       | 🔄 Next |
-| **History & Scoring**       | MEDIUM   | 2-3 days       | 📋 Planned |
-| **ViewModels & MVVM**       | MEDIUM   | 1-2 days       | 📋 Planned |
+| **Recording Playback**      | MEDIUM   | 1-2 days       | ⚒️ Working |
+| **History & Scoring**       | MEDIUM   | 2-3 days       | 🔄 Next |
 | **Testing & Polish**        | HIGH     | 1-2 days       | 📋 Planned |
 | **Final Submission**        | HIGH     | 1 day          | 📋 Planned |
 
-**Estimated completion:** 5-7 days from now
-**Final deadline:** End of semester (2 weeks)
+**Estimated completion:** 2-3 Weeks from now
 
 ## Blockers/Issues
 - **No major technical blockers** - all core systems are working
