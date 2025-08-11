@@ -1,9 +1,9 @@
 # SpeakEasy Privacy Policy
 
-**Last Updated:** [Current Date]  
+**Last Updated:** 9-Aug-2025  
 **App Version:** 1.0.0  
-**Developer:** [Your Name/Company]  
-**Contact:** [Your Email]
+**Developer:** Tanmay Desai  
+**Contact:** tanmaydesai2126@gmail.com
 
 ## Introduction
 
@@ -97,7 +97,7 @@ Welcome to SpeakEasy ("we," "our," or "us"). We are committed to protecting your
 ### Questions and Concerns
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 
-**Email:** [Your Email Address]  
+**Email:** tanmaydesai2126@gmail.com  
 **Subject Line:** "SpeakEasy Privacy Policy Question"
 
 ### Response Time
@@ -159,4 +159,4 @@ If you have any questions about this Privacy Policy or our data practices, pleas
 
 **By using SpeakEasy, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with any part of this policy, please do not use our app.**
 
-**This policy is effective as of [Current Date] and applies to all versions of the SpeakEasy mobile application.** 
+**This policy is effective as of 9-Aug-2025 and applies to all versions of the SpeakEasy mobile application.** 
