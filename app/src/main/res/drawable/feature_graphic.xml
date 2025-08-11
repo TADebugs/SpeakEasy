@@ -1,0 +1,134 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1024dp"
+    android:height="500dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="500">
+    
+    <!-- Background gradient -->
+    <defs>
+        <linearGradient
+            android:id="backgroundGradient"
+            android:startX="0%"
+            android:startY="0%"
+            android:endX="100%"
+            android:endY="100%">
+            <item android:offset="0%" android:color="#4A90E2"/>
+            <item android:offset="50%" android:color="#7B68EE"/>
+            <item android:offset="100%" android:color="#9370DB"/>
+        </linearGradient>
+    </defs>
+    
+    <!-- Background rectangle -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M0,0h1024v500h-1024z"/>
+    
+    <!-- Background with gradient -->
+    <path
+        android:fillColor="#4A90E2"
+        android:pathData="M0,0h1024v500h-1024z"/>
+    
+    <!-- Decorative circles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M800,100m-60,0a60,60 0,1 1,120 0a60,60 0,1 1,-120 0"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M900,300m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.1"
+        android:pathData="M150,200m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+    
+    <!-- App name text -->
+    <text
+        android:fontFamily="sans-serif-bold"
+        android:textSize="72"
+        android:textColor="#FFFFFF"
+        android:x="100"
+        android:y="180">SpeakEasy</text>
+    
+    <!-- Tagline -->
+    <text
+        android:fontFamily="sans-serif-medium"
+        android:textSize="32"
+        android:textColor="#FFFFFF"
+        android:alpha="0.9"
+        android:x="100"
+        android:y="230">Master Public Speaking</text>
+    
+    <!-- Feature highlights -->
+    <text
+        android:fontFamily="sans-serif"
+        android:textSize="24"
+        android:textColor="#FFFFFF"
+        android:alpha="0.8"
+        android:x="100"
+        android:y="300">🎤 Smart Recording</text>
+    
+    <text
+        android:fontFamily="sans-serif"
+        android:textSize="24"
+        android:textColor="#FFFFFF"
+        android:alpha="0.8"
+        android:x="100"
+        android:y="340">📝 Speech Prompts</text>
+    
+    <text
+        android:fontFamily="sans-serif"
+        android:textSize="24"
+        android:textColor="#FFFFFF"
+        android:alpha="0.8"
+        android:x="100"
+        android:y="380">📊 Progress Tracking</text>
+    
+    <!-- Right side illustration -->
+    <!-- Microphone icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M750,150c-20,0 -36,16 -36,36v72c0,20 16,36 36,36s36,-16 36,-36V186C786,166 770,150 750,150zM750,336c-26.4,0 -48,-21.6 -48,-48h-24c0,39.6 32.4,72 72,72s72,-32.4 72,-72h-24C798,314.4 776.4,336 750,336z"/>
+    
+    <!-- Sound waves -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M820,288c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S826.6,288 820,288z"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M844,264c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S850.6,264 844,264z"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M868,240c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S874.6,240 868,240z"/>
+    
+    <!-- Left sound waves -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M680,288c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S686.6,288 680,288z"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M656,264c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S662.6,264 656,264z"/>
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:pathData="M632,240c-6.6,0 -12,5.4 -12,12s5.4,12 12,12s12,-5.4 12,-12S638.6,240 632,240z"/>
+    
+    <!-- Call to action -->
+    <text
+        android:fontFamily="sans-serif-bold"
+        android:textSize="28"
+        android:textColor="#FFFFFF"
+        android:x="100"
+        android:y="450">Download Now • Build Confidence • Speak with Ease</text>
+</vector> 
